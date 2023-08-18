@@ -52,19 +52,31 @@
         	font-size: 60px; /* Adjust the value as needed */
         	margin-bottom: 10px;
     	}
+        .clickable-image {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .clickable-image img {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .clickable-image:hover img {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
     </style>
 </head>
 <body>
     <div class="description">
         <h2>Right arm supermatch ELO ratings from 2021-present</h2>
         <p>
-            <a href="https://www.youtube.com/@MattRhodesSport"><img src="images/kott.jpg"></a>
-            <a href="https://www.youtube.com/@eastvswestarmwrestling"><img src="images/evsw.jpg"></a>
-            <a href="https://www.youtube.com/@ARMWRESTLING"><img src="images/pal.jpg"></a>
-            <a href="https://www.youtube.com/@MonsterMichaelTodd"><img src="images/monsterfactory.jpg" alt="Monster Factory" width="176" height="176"></a>
-            <a href="https://armwrestlingcanada.com"><img src="images/awcanada.jpg"></a>
-            <a href="https://www.youtube.com/@armwarsofficial"><img src="images/armwars.jpg"></a>
-            <a href="https://www.youtube.com/@BeStrongArmwrestling"><img src="images/bestrongarmwrestling.jpg"></a>
+            <a href="https://www.youtube.com/@MattRhodesSport" class="clickable-image"><img src="images/kott.jpg"></a>
+            <a href="https://www.youtube.com/@eastvswestarmwrestling"class="clickable-image"><img src="images/evsw.jpg"></a>
+            <a href="https://www.youtube.com/@ARMWRESTLING" class="clickable-image"><img src="images/pal.jpg"></a>
+            <a href="https://www.youtube.com/@MonsterMichaelTodd" class="clickable-image"><img src="images/monsterfactory.jpg" alt="Monster Factory" width="176" height="176"></a>
+            <a href="https://armwrestlingcanada.com"class="clickable-image"> <img src="images/awcanada.jpg"></a>
+            <a href="https://www.youtube.com/@armwarsofficial" class="clickable-image"><img src="images/armwars.jpg"></a>
+            <a href="https://www.youtube.com/@BeStrongArmwrestling"class="clickable-image"> <img src="images/bestrongarmwrestling.jpg"></a>
         </p>
         <ul class="weight-class-list">
             <li><a class="weight-class-link" href="super.html">Super heavyweight</a></li>
